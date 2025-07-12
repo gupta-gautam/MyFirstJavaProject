@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class SpanArray {
+public class BarChartArray {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int arr = sc.nextInt();
@@ -9,22 +9,23 @@ public class SpanArray {
         for (int i = 0; i < arr; i++) {
             num[i] = sc.nextInt();
         }
-        int max = Integer.MIN_VALUE;
-        int min = Integer.MAX_VALUE;
-/*
-         or we can write beside this max min
-        int max =num[0];
-        int min = num[0];
-        */
+
+        int max = num[0];
         for (int i = 0; i < num.length; i++) {
             if (num[i] > max) {
                 max = num[i];
             }
-            if (num[i] < min) {
-                min = num[i];
-            }
-
         }
-        System.out.println(max - min);
+        for (int floor = max; floor >= 1; floor--) {
+            for (int i = 0; i < num.length; i++) {
+                if (num[i] >= floor) {
+                    System.out.print("*\t");
+                } else {
+                    System.out.print("\t");
+                }
+            }
+            System.out.println();
+        }
+
     }
 }
