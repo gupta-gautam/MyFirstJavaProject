@@ -25,6 +25,13 @@ public class SumArray {
         int j = num2.length - 1;
         int k = sum.length - 1;
 
+        /*Arrays in Java are 0-indexed, meaning:
+
+First element is at index 0
+
+Last element is at index length - 1
+
+ */
         while (k >= 0) {
             int d = c;
 
