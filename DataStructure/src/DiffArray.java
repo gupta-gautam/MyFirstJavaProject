@@ -30,7 +30,7 @@ public class DiffArray {
                 d = num2[j] + c - num1v;
                 c = 0;
             } else {
-                d =  num2[j] + c + 10 - num1v;
+                d = num2[j] + c + 10 - num1v;
                 c = -1;
             }
             diff[k] = d;
@@ -39,15 +39,15 @@ public class DiffArray {
             j--;
             k--;
         }
-        int idx =0;
-        while(idx < diff.length) {
+        int idx = 0;
+        while (idx < diff.length) {
             if (diff[idx] == 0) {
                 idx++;
             } else {
                 break;
             }
         }
-        while(idx < diff.length){
+        while (idx < diff.length) {
             System.out.println(diff[idx]);
             idx++;
         }
