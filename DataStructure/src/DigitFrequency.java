@@ -10,14 +10,14 @@ public class DigitFrequency {
     }
 
     public static int getDigitFrequency(int n, int d) {
-        int ans = 0;
+        int rv = 0;
         while (n > 0) {
             int dig = n % 10;
             n = n / 10;
             if (dig == d) {
-                ans++;
+                rv++;
             }
         }
-        return ans;
+        return rv;
     }
 }
