@@ -29,9 +29,9 @@ public class StringsFunctions {
             System.out.println("equal");
         } else {
             System.out.println("not equal");
-        //5 Substrings
+            //5 Substrings
             String sentence = "My name is Tony";
-            String name =sentence.substring(11,sentence.length());
+            String name = sentence.substring(11, sentence.length());
             System.out.println(name);
         }
         //6 Strings are immutable
