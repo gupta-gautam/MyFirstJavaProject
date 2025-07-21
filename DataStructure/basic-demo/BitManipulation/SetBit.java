@@ -1,5 +1,6 @@
 import java.util.*;
-public class basicDemo {
+
+public class SetBit {
     public static void main(String[] args) {
 
     }
