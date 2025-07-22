@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DataStructure/Functions/Functions.iml" filepath="$PROJECT_DIR$/DataStructure/Functions/Functions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DataStructure/Leetcode/Leetcode.iml" filepath="$PROJECT_DIR$/DataStructure/Leetcode/Leetcode.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyFirstProject.iml" filepath="$PROJECT_DIR$/MyFirstProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/DataStructure/Strings/Strings.iml" filepath="$PROJECT_DIR$/DataStructure/Strings/Strings.iml" />
       <module fileurl="file://$PROJECT_DIR$/DataStructure/basic-demo/basic-demo.iml" filepath="$PROJECT_DIR$/DataStructure/basic-demo/basic-demo.iml" />
