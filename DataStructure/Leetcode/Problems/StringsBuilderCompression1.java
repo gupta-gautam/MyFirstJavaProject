@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class StringsCompression1 {
+public class StringsBuilderCompression1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String str = sc.next();
@@ -8,14 +8,15 @@ public class StringsCompression1 {
     }
 
     public static String compression1(String str) {
-        String s = " " + str.charAt(0); // cannot direcyly assign char so used " "
+        StringBuilder sb = new StringBuilder();
+        sb.append(str.charAt(0));
         for (int i = 1; i < str.length(); i++) {
             char curr = str.charAt(i);
             char prev = str.charAt(i - 1);
             if (curr != prev) {
-                s += curr;
+                sb.append(curr);
             }
         }
-        return s;
+        return sb.toString();
     }
 }
