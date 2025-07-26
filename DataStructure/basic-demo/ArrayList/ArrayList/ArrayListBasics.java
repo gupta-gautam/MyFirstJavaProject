@@ -20,12 +20,19 @@ public class ArrayListBasics {
         System.out.println(val);
 
         // to set
-        list.set(1,2000);  //  not list [1] = 2000;
+        list.set(1, 2000);  //  not list [1] = 2000;
         System.out.println(list + "->" + list.size());
 
         // to remove
         list.remove(1);
         System.out.println(list + "->" + list.size());
-
+        // loop
+        //   for (int i = 0; i < list.size(); i++) {
+        //     int val1 = list.get(i);
+        //   System.out.println(val1);
+        for (int val1 : list) {
+            System.out.println(val1);
+            // another method for loop
+        }
     }
 }
