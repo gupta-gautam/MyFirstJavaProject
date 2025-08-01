@@ -24,7 +24,7 @@ public class ArrayListBasics {
         System.out.println(list + "->" + list.size());
 
         // to remove
-        list.remove(1);
+        list.remove(2);
         System.out.println(list + "->" + list.size());
         // loop
         //   for (int i = 0; i < list.size(); i++) {
