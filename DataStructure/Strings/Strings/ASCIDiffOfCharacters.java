@@ -7,7 +7,7 @@ public class ASCIDiffOfCharacters {
         System.out.println(solution(str));
     }
 
-    public static String solution(String str) {
+    public static void solution(String str) {
         StringBuilder sb = new StringBuilder();
         sb.append(str.charAt(0));
 
