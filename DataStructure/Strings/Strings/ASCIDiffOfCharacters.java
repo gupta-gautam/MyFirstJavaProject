@@ -4,9 +4,11 @@ public class ASCIDiffOfCharacters {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String str = sc.next();
-        System.out.println(solution(str));
+        solution(str);
     }
 
+    // in void in last we wrote sout(sb.toString());
+    // in string we wrote rturn sb.toString();
     public static void solution(String str) {
         StringBuilder sb = new StringBuilder();
         sb.append(str.charAt(0));
@@ -18,6 +20,6 @@ public class ASCIDiffOfCharacters {
             sb.append(diff);
             sb.append(curr);
         }
-        return sb.toString();
+        System.out.println(sb.toString());
     }
 }
