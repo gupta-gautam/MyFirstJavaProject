@@ -10,9 +10,9 @@ public class CheckPalindromeInt {
         int original = x;
         int reversed = 0;
         while (x != 0) {   //x=121
-            int digit = x % 10;  // 121 % 10 = 1
+            int digit = x % 10;  // 121 % 10 = 1 % = rem
             reversed = reversed * 10 + digit; // 0 * 10 + 1 = 1
-            x = x / 10;  // 12 / 10 =  1
+            x = x / 10;  // 12 / 10 =  1 / = quotient
         }
 
         return original == reversed;
