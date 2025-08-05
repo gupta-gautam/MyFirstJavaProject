@@ -27,6 +27,12 @@ class Circle extends Shape {
     }
 }
 
+class Square extends Shape {
+    public void area(int r) {
+        System.out.println(r * r);
+    }
+}
+
 public class Inheritance {
     public static void main(String[] args) {
         Triangle t1 = new Triangle();
