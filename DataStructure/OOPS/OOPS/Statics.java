@@ -10,8 +10,8 @@ class Studens {
 public class Statics {
     public static void main(String[] args) {
         Studens.school = "JMV";
-        Studens student1 = new Studens();
-        student1.name = "Tony";
-        System.out.println(student1.school);
+        Studens studens1 = new Studens();
+        studens1.name = "Tony";
+        System.out.println(studens1.school);
     }
 }
