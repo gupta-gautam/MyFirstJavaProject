@@ -27,7 +27,7 @@ class Circle extends Shape {
     }
 }
 
-class Square extends Shape {
+class Squares extends Shape {
     public void area(int r) {
         System.out.println(r * r);
     }
