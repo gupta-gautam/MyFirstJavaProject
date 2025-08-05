@@ -8,10 +8,12 @@ interface Animals {
     */
 
 }
-interface Herbivore{
+
+interface Herbivore {
 
 }
-class Horses implements Animals {
+
+class Horses implements Animals, Herbivore {
     public void walk() {
         System.out.println("Walks on 4 legs");
     }
