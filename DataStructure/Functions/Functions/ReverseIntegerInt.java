@@ -20,8 +20,8 @@ public class ReverseIntegerInt {
     }
 
     public static void main(String[] args) {
-Scanner sc = new Scanner(System.in);
-int x = sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int x = sc.nextInt();
         System.out.println(solution(x));
     }
 }
