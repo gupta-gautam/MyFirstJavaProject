@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class ReverseInteger {
+public class ReverseIntegerLong {
 
     public static int solution(int x) {
 
