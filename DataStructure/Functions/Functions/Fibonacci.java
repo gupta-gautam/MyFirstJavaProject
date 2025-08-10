@@ -5,7 +5,11 @@ public class Fibonacci {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int a = 0, b = 1;
-       int c =a+b;
-
+        for (int i = 0; i < n; i++) {
+            System.out.println(a);
+            int c = a + b;
+            a = b;
+            b = c;
+        }
     }
 }
