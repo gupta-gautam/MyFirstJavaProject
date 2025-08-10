@@ -3,6 +3,7 @@ public class PrintNum {
         if (n == 0) { // base class or condition
             return;
         }
+        // saare num print krane hote toh base class mai sout nhi likhte
         System.out.println(n); //print
         printNums(n - 1); // recursion
     }
