@@ -18,7 +18,7 @@ public class RemoveDuplicates1 {
 
         int nums[] = new int[x];
 
-        for (int i = 01 ; i < nums.length; i++) {
+        for (int i = 0; i < nums.length; i++) {
             nums[i] = sc.nextInt();
         }
 
