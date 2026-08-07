@@ -16,6 +16,7 @@
       <module fileurl="file://$PROJECT_DIR$/DataStructure/Sorting/Sorting.iml" filepath="$PROJECT_DIR$/DataStructure/Sorting/Sorting.iml" />
       <module fileurl="file://$PROJECT_DIR$/DataStructure/Stack/Stack.iml" filepath="$PROJECT_DIR$/DataStructure/Stack/Stack.iml" />
       <module fileurl="file://$PROJECT_DIR$/DataStructure/Strings/Strings.iml" filepath="$PROJECT_DIR$/DataStructure/Strings/Strings.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DataStructure/Trees/Trees.iml" filepath="$PROJECT_DIR$/DataStructure/Trees/Trees.iml" />
       <module fileurl="file://$PROJECT_DIR$/DataStructure/untitled.iml" filepath="$PROJECT_DIR$/DataStructure/untitled.iml" />
     </modules>
   </component>
