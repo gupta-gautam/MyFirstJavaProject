@@ -1,4 +1,4 @@
-public class BinaryTrees {
+public class InOrderTraversal {
     static class Node {
         int data;
         Node left;
@@ -11,7 +11,7 @@ public class BinaryTrees {
         }
     }
 
-    static class BinaryTree {
+    static class Inorder {
         static int idx = -1;
 
         public static Node buildTree(int[] nodes) {
@@ -27,21 +27,20 @@ public class BinaryTrees {
         }
     }
 
-    public static void preOrder(Node root) {
+    public static void inorder(Node root) {
         if (root == null) {
-            // for printing -1
-            //System.out.print("-1 ");
             return;
         }
+        inorder(root.left);
         System.out.print(root.data + " ");
-        preOrder(root.left);
-        preOrder(root.right);
+        inorder(root.right);
+
     }
 
     public static void main(String[] args) {
         int nodes[] = {1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1};
-        BinaryTree tree = new BinaryTree();
+        Inorder tree = new Inorder();
         Node root = tree.buildTree(nodes);
-        preOrder(root);
+        inorder(root);
     }
 }
