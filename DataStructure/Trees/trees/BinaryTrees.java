@@ -37,12 +37,29 @@ public class BinaryTrees {
         preOrder(root.left);
         preOrder(root.right);
     }
-
+    public static int countNodes(Node root){
+        if(root == null){
+            return 0;
+        }
+        int left = countNodes(root.left);
+        int right = countNodes(root.right);
+        return left + right +1;
+    }
+    public static int sumNodes(Node root){
+        if(root == null){
+            return 0;
+        }
+        int left = sumNodes(root.left);
+        int right = sumNodes(root.right);
+        return left + right + root.data;
+    }
 
     public static void main(String[] args) {
         int nodes[] = {1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1};
         BinaryTree tree = new BinaryTree();
         Node root = tree.buildTree(nodes);
-        preOrder(root);
+        //preOrder(root);
+        System.out.println(countNodes(root));
+        System.out.println(sumNodes(root));
     }
 }
