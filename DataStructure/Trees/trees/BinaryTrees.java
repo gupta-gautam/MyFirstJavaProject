@@ -66,6 +66,7 @@ public class BinaryTrees {
         return myHeight;
     }
 
+    // Approach :- O(N^2)
     public static int diameter(Node root) {
         if (root == null) {
             return 0;
@@ -74,6 +75,35 @@ public class BinaryTrees {
         int diam2 = diameter(root.right);
         int diam3 = height(root.left) + height(root.right) + 1;
         return Math.max(diam3, Math.max(diam2, diam1));
+    }
+
+    //Approach :- O(N)
+    static class TreeInfo {
+        int ht;
+        int diam;
+
+        TreeInfo(int ht, int diam) {
+            this.ht = ht;
+            this.diam = diam;
+        }
+    }
+
+    public static TreeInfo diameter2(Node root) {
+        if (root == null) {
+            return new TreeInfo(0, 0);
+        }
+        TreeInfo left = diameter2(root.left);
+        TreeInfo right = diameter2(root.right);
+
+        int myHt = Math.max(left.ht, right.ht) + 1;
+
+        int diam1 = left.diam;
+        int diam2 = right.diam;
+        int diam3 = left.ht + right.ht + 1;
+
+        int myDiam = Math.max(Math.max(diam1, diam2), diam3);
+        TreeInfo myInfo = new TreeInfo(myHt, myDiam);
+        return myInfo;
     }
 
     public static void main(String[] args) {
@@ -85,5 +115,6 @@ public class BinaryTrees {
         //System.out.println(sumNodes(root));
         System.out.println(height(root));
         System.out.println(diameter(root));
+        System.out.println(diameter2(root).diam);
     }
 }
