@@ -110,9 +110,9 @@ public class BinaryTrees {
         int nodes[] = {1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1};
         BinaryTree tree = new BinaryTree();
         Node root = tree.buildTree(nodes);
-        //preOrder(root);
-        //System.out.println(countNodes(root));
-        //System.out.println(sumNodes(root));
+        preOrder(root);
+        System.out.println(countNodes(root));
+        System.out.println(sumNodes(root));
         System.out.println(height(root));
         System.out.println(diameter(root));
         System.out.println(diameter2(root).diam);
