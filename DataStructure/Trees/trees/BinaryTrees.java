@@ -65,6 +65,15 @@ public class BinaryTrees {
         int myHeight = Math.max(leftHeight, rightHeight) + 1;
         return myHeight;
     }
+    public static int minHeight(Node root){
+        if (root == null){
+            return 0;
+        }
+        int left = minHeight(root.left);
+        int right = minHeight(root.right);
+        int ht = Math.min(left,right) + 1;
+        return ht;
+    }
 
     // Approach :- O(N^2)
     public static int diameter(Node root) {
@@ -116,5 +125,6 @@ public class BinaryTrees {
         System.out.println(height(root));
         System.out.println(diameter(root));
         System.out.println(diameter2(root).diam);
+        System.out.println(minHeight(root));
     }
 }
